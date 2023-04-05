@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>UF Event Dashboard</title>
+    <style>
+      body {
+        background-color: white;
+        color: crimson;
+      }
+      h1, h2 {
+        color: crimson;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 20px;
+        padding: 20px;
+        border: 2px solid crimson;
+        border-radius: 10px;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>UF Event Dashboard</h1>
+    <ul>
+      <li>
+        <img src="{% static 'img/eve.png' %}" alt="My Image">
+        <h2>Event 1 Title</h2>
+        <p>Event 1 Description</p>
+        <p>Date and Time: 01/01/2023 7:00pm</p>
+        <p>Place: University of Florida</p>
+      </li>
+      <li>
+        <img src="{% static 'img/eve.png' %}" alt="My Image">
+        <h2>Event 2 Title</h2>
+        <p>Event 2 Description</p>
+        <p>Date and Time: 02/01/2023 8:00pm</p>
+        <p>Place: University of Florida</p>
+      </li>
+      <li>
+        <img src="{% static 'img/eve.png' %}" alt="My Image" >
+        <h2>Event 3 Title</h2>
+        <p>Event 3 Description</p>
+        <p>Date and Time: 03/01/2023 9:00pm</p>
+        <p>Place: University of Florida</p>
+      </li>
+    </ul>
+  </body>
+</html>
