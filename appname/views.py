@@ -11,3 +11,12 @@ def signup(request):
 
 def dashboard(request):
     return render(request, 'dashboard.html')
+
+def events1(request):
+    return render(request, 'events1.html')
+
+def events2(request):
+    return render(request, 'events2.html')
+
+def events3(request):
+    return render(request, 'events3.html')
