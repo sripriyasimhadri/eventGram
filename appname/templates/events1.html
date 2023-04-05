@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <title>Events1</title>
+    <style>
+      body {
+        background-color: white;
+        /*color: crimson;*/
+      }
+      
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 10px;
+      }
+      #about{
+        color:black;
+        text-align: center;
+      }
+      #photo{
+        float:right;
+        width:40%;
+        height:40%;
+        margin-top: 0px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>EventGram</h1>
+        <img src="{% static 'img/eve.png' %}" alt="My Image">
+        <div id="about">
+        <h1> ROCK STAR MUSIC FESTIVAL</h1>
+        <p> Rockstar music fest performaces, giveaways, games attractions and more vending and sponsorship 18+</p>
+      </div>
+
+      <div id="when and where">
+        <h2> When and where</h2>
+        <p>DATE & TIME</p>
+        <p> Saturday,15th April 2023</p>
+        <p>1:00 PM EST</p>
+
+      </div>
+    <div id="location">
+      <p>Reitz Union, Gainesville, FL</p>
+      <p>32608</p>
+    </div>
+    <div id="photo">
+      <img src="{% static 'img/events1.jpeg' %}" alt=" My Image">
+    </div>
+    <div id="register">
+      <a href="{% url 'register' %}">Register</a>
+    </div>
+  </body>
+</html>
