@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+
 <html>
   <head>
     <title>UF Event Dashboard</title>
@@ -17,42 +18,64 @@
         padding: 0;
       }
       li {
-        margin-bottom: 20px;
-        padding: 20px;
-        border: 2px solid crimson;
-        border-radius: 10px;
-      }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid crimson;
+  border-radius: 10px;
+}
       img {
         max-width: 100%;
         height: auto;
         border-radius: 10px;
-        margin-bottom: 10px;
+        margin-right: 10px;
       }
+      button {
+  background-color: crimson;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
     </style>
   </head>
   <body>
     <h1>UF Event Dashboard</h1>
     <ul>
       <li>
-        <img src="{% static 'img/eve.png' %}" alt="My Image">
-        <h2>Event 1 Title</h2>
-        <p>Event 1 Description</p>
-        <p>Date and Time: 01/01/2023 7:00pm</p>
-        <p>Place: University of Florida</p>
+        <img src="{% static 'img/eve.png' %}" alt="My Image" width="500" height="80">
+        <div>
+          <h2>Event 1 Title</h2>
+          <p>Event 1 Description</p>
+          <p>Date and Time: 01/01/2023 7:00pm</p>
+          <p>Place: University of Florida</p>
+          <button onclick="window.location.href='events1.html'">View More Details</button>
+        </div>
       </li>
       <li>
-        <img src="{% static 'img/eve.png' %}" alt="My Image">
-        <h2>Event 2 Title</h2>
-        <p>Event 2 Description</p>
-        <p>Date and Time: 02/01/2023 8:00pm</p>
-        <p>Place: University of Florida</p>
+        <img src="{% static 'img/eve.png' %}" alt="My Image" width="500" height="80">
+        <div>
+          <h2>Event 2 Title</h2>
+          <p>Event 2 Description</p>
+          <p>Date and Time: 02/01/2023 8:00pm</p>
+          <p>Place: University of Florida</p>
+          <button onclick="window.location.href='events2.html'">View More Details</button>
+        </div>
       </li>
       <li>
-        <img src="{% static 'img/eve.png' %}" alt="My Image" >
-        <h2>Event 3 Title</h2>
-        <p>Event 3 Description</p>
-        <p>Date and Time: 03/01/2023 9:00pm</p>
-        <p>Place: University of Florida</p>
+        <img src="{% static 'img/eve.png' %}" alt="My Image" width="500" height="80">
+        <div>
+          <h2>Event 3 Title</h2>
+          <p>Event 3 Description</p>
+          <p>Date and Time: 03/01/2023 9:00pm</p>
+          <p>Place: University of Florida</p>
+          <button onclick="window.location.href='events3.html'">View More Details</button>
+        </div>
       </li>
     </ul>
   </body>
