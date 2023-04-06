@@ -32,3 +32,9 @@ def events6(request):
 
 def register(request):
     return render(request, 'register.html')
+
+def contactus(request):
+    return render(request, 'contactus.html')
+
+def location(request):
+    return render(request, 'location.html')

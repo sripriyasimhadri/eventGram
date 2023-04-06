@@ -63,7 +63,7 @@
 
         img {
             width: 100%;
-            height: 100px
+            height: 450px
         }
         .login-page {
             background-color: white;
@@ -123,6 +123,16 @@
             cursor: pointer;
         }
 
+        a {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #990000;
+            color: white;
+            cursor: pointer;
+        }
+
         .error {
             margin-top: 10px;
             color: red;
@@ -161,7 +171,7 @@
             -moz-appearance: none;
             appearance: none;
             border-radius: 50%;
-            width: 20px;
+            width: 30px;
             height: 20px;
             border: 2px solid #990000;
             outline: none;
@@ -210,13 +220,19 @@
         <h1>EventGram</h1>
     </div>
     <div id="about">
-    <a href="{% url 'register' %}"><i class="fa fa-user"></i>Register</a>
+        <i class="fa fa-user"></i>Account
     </div>
     <div id="contact">
         <i class="fa fa-user"></i>Contact Us
     </div>
     <img src="{% static 'img/eve.png' %}" alt="My Image" width="500" height="600">
     <script src="https://kit.fontawesome.com/xxxxxxxxxx.js" crossorigin="anonymous"></script>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
   <div class="login-page">
     <div class="login-container">
       <form onSubmit={handleLogin}>
@@ -252,8 +268,9 @@
             Pin Code:
           </label>
           <input type="text" id="pincode" class="login-input" name="pincode" required />
-        <button type="submit">Add to Calender</button>
-        <button type="submit">View Event Discounts/Tickets</button>
+        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=EventGram&dates=20230405T120000Z/20230405T140000Z&details=Event+details&location=Event+location&sf=true&output=xml#eventpage_6">Add to Calendar</a>
+        <a href="https://www.rakuten.com/m/best-coupon?src=googadw-Search&eeid=17879&utm_channel=sem&utm_medium=sem&utm_source=18662587192&utm_campaign=nb&utm_content=c&utm_term=ggl&utm_pub=149469391384&utm_size=aud-1845127031982:dsa-1456167871416&mkwid=0001&acct=m&ds_kids=p73837664667&gclid=Cj0KCQjwuLShBhC_ARIsAFod4fLMHaxDPkUqICY9kTZ5vbXnPMaWDHV_6Ij4jLoXb6x4AnJMD2L72vsaAhBDEALw_wcB&gclsrc=aw.ds">View coupons/discounts</a>
+        <a href="{% url 'location' %}">Submit</a>
       </form>
     </div>
   </div>
@@ -316,10 +333,4 @@
     });
   </script>
 </body>
-
-
-
-
-
-
 </html>
