@@ -21,5 +21,14 @@ def events2(request):
 def events3(request):
     return render(request, 'events3.html')
 
+def events4(request):
+    return render(request, 'events4.html')
+
+def events5(request):
+    return render(request, 'events5.html')
+
+def events6(request):
+    return render(request, 'events6.html')
+
 def register(request):
     return render(request, 'register.html')
